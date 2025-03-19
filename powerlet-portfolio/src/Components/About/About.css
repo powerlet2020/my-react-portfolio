@@ -1,0 +1,157 @@
+.about-section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about-title span{
+     background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+
+.about-img {
+    width: 350px;
+    border-radius: 10px;
+    margin-right: 20px;
+  
+}
+
+/* Text Content */
+.text {
+    max-width: 600px;
+    text-align: left;
+}
+.text p{
+    font-size: 20px;
+}
+.text .para-1{
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 20px;
+
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.bar {
+    background: rgb(33, 7, 76);
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+}/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    gap: 50px;
+    color: white;
+}
+
+/* Individual Stat Box */
+.stat-item {
+    flex: 1;
+    max-width: 250px;
+    padding: 20px;
+    /* border-right: 2px solid rgba(255, 255, 255, 0.3); */
+}
+
+/* Remove right border from the last item */
+.stat-item:last-child {
+    border-right: none;
+}
+
+/* Gradient Numbers */
+.number {
+    font-size: 50px;
+    font-weight: bold;
+    background:linear-gradient(270deg, #df8908 50.4%, #b415ff 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Labels */
+.label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ========================================== */
+/* ✅ Responsive Styles for Mobile Devices ✅ */
+/* ========================================== */
+@media screen and (max-width: 768px) {
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack image and text */
+        text-align: center;
+    }
+
+    .about-img {
+        width: 350px;
+        margin: 0 auto 15px auto; /* Center image */
+    }
+
+    .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .bar {
+        width: 90%; /* Reduce skill bar width */
+        margin: 0 auto; /* Center it */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .highlight {
+        padding: 2px 6px;
+    }
+
+    .profile-img {
+        width: 250px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .bar {
+        width: 85%;
+    }
+}

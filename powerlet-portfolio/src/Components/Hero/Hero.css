@@ -1,0 +1,70 @@
+.hero {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+.profile-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-img{
+    width: 100%;
+ object-fit: cover;
+}
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.gradient{
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.description {
+    color: #9ca3af;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.connect-btn-hero {
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    border: none;
+    color: white;
+}
+.resume-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+     background: transparent;
+    border: 1px solid #4b5563;
+    color: white;
+}
+.resume-btn:hover {
+    background-color: #1f2937;
+    border: 2px solid #b415ff;
+
+}
+.connect-btn-hero:hover{
+     transform: scale(1.1);
+    border: 2px solid white;
+    opacity: 0.9;
+}

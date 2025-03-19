@@ -1,0 +1,128 @@
+.contact-section {
+    width: 80%; /* Ensures equal margins on both sides */
+    max-width: 1100px; /* Limits max width for better readability */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding: 50px 0; /* Adds vertical spacing */
+}
+.contact-header{
+    margin-bottom: 50px;
+    margin-left: 350px;
+}
+.contact-header h1{
+    font-size: 2.5rem;
+}
+.contact-header h1 span{
+    font-weight: bold;
+    background:linear-gradient(270deg, #df8908 50.4%, #b415ff 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds small gap between contact-info and contact-form */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 45%;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact-info h2 .highlight {
+    color: white;
+    background: #ff00ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contact-info h3 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.contact-info h3 .highlight-text {
+     background:linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.contact-details p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.contact-form {
+    width: 50%;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: #2b2b2b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background:linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+     .contact-header {
+         margin-left: 100px;
+     }
+      
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}

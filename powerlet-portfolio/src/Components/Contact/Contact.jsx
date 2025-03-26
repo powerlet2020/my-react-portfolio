@@ -2,6 +2,29 @@ import React from "react";
 import "./Contact.css"; // Assuming you have a CSS file for styling
 
 const Contact = () => {
+    const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "b5a5bfd3-69be-4979-b9cb-679a49735ca6");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-header">
@@ -27,15 +50,15 @@ const Contact = () => {
         </div>
 
         <div className="contact-form">
-          <form>
+          <form onSubmit={onSubmit}>
             <label htmlFor="name">Your Name</label>
-            <input type="text" id="name" placeholder="Enter your name" />
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
 
             <label htmlFor="email">Your Email</label>
-            <input type="email" id="email" placeholder="Enter your email" />
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
 
             <label htmlFor="message">Write your message here</label>
-            <textarea id="message" placeholder="Enter your message"></textarea>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
 
             <button type="submit">Submit now</button>
           </form>

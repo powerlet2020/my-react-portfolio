@@ -2,7 +2,7 @@
     width: 80%; /* Ensures equal margins on both sides */
     max-width: 1100px; /* Limits max width for better readability */
     margin: 0 auto; /* Centers the section horizontally */
-    padding: 50px 0; /* Adds vertical spacing */
+    padding: 0px 0; /* Adds vertical spacing */
 }
 .contact-header{
     margin-bottom: 50px;

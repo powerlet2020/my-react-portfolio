@@ -1,25 +1,26 @@
 import React from "react";
 import "./Reviews.css"; // Assuming you have a CSS file for styling
-import headshot2 from "../../assets/headshot2.jpg";
-import headshot6 from "../../assets/headshot6.jpg";
+import R_male1 from "../../assets/R-male1.jpg";
+import R_male2 from "../../assets/R-male2.jpg";
+import R_female from "../../assets/R-female.jpg";
 
 const reviews = [
   {
-    img: headshot2,
+    img: R_male1,
     alt: "John Doe",
     text: "Amazing work! Highly recommended for professional projects.",
     stars: "★★★★★",
     author: "- John Doe, CEO of TechCorp"
   },
   {
-    img: headshot6,
+    img: R_female,
     alt: "Sarah Smith",
     text: "A truly skilled developer who understands the needs of the client.",
     stars: "★★★★☆",
     author: "- Sarah Smith, Project Manager"
   },
   {
-    img: headshot2,
+    img: R_male2,
     alt: "Mark Wilson",
     text: "Excellent communication and top-notch coding skills!",
     stars: "★★★★★",

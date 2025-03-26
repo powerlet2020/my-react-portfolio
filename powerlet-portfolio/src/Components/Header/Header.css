@@ -31,6 +31,14 @@ header {
     display: flex;
     gap: 2rem;
 }
+.nav-links hr{
+    border: none;
+    width: 60%;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    
+}
 .nav-links a {
     color: white;
     text-decoration: none;
